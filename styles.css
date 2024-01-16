@@ -5,17 +5,125 @@
     box-sizing: border-box;
 }
 html{
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
   }
+body{
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    min-height: 100vh;
+    background-color: #003;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* UTILITY CLASSES */
+.nowrap{
+    white-space: nowrap;
+}
+
+/* ***************HEADER SECTION**************** */
+/* SMALLEST SCREEN SIZES */
+
+.h-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: navy;
+}
+.menu-btn{
+    width: 30px;
+    height: 5px;
+}
+
+.logo{
+    color: white;
+    font-size: 40px;
+}
+.logo span{
+    color: yellow;
+}
+nav{
+    display: none;
+    animation: dropDown .5s ease-in-out forwards;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(244, 248, 59);
+    min-width: 100%;
+}
+nav ul li{
+    list-style-type: none;
+    width: 100%;
+    
+}
+nav ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: navy;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+@keyframes dropDown {
+    0%{
+        transform: scaleY(0);
+    }
+    80%{
+        transform: scaleY(1.2);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
+
+/* MOBILE SCREENS */
+@media screen and (min-width: 750px){
+    nav{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* DESKTOP VIEW */ 
-header {
+/* header {
     display: flex;
     background-color: rgb(2, 2, 75);
     color: aqua;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
 }
 header h1 {
     font-size: 40px;
@@ -31,6 +139,7 @@ nav ul {
     text-decoration: none;
     display: flex;
     justify-content: space-around;
+    gap: 50px;
 }
 nav li a {
     text-decoration: none;
@@ -39,12 +148,11 @@ nav li a {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin-right: 30px;
     text-transform: capitalize;
-    font-size: 30px;
-    color: c;
+    font-size: 20px;
 }
 nav li a:hover{
     cursor: pointer;
     background-color: rgb(2, 2, 75);
     color: yellow;
-    transform: scale(1.5);
-}
+    font-size: 25px;
+} */
