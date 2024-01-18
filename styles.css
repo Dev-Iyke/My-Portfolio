@@ -36,6 +36,7 @@ img{
     justify-content: space-between;
     width: 100%;
     background-color: navy;
+    position: fixed;
 }
 .menu-btn{
     width: 30px;
@@ -44,28 +45,33 @@ img{
 
 .logo{
     color: white;
-    font-size: 40px;
+    font-size: 3.5rem;
 }
 .logo span{
     color: yellow;
 }
-nav{
+.small-scr{
     display: none;
     animation: dropDown .5s ease-in-out forwards;
 }
-nav ul{
+.big-scr{
+    display: none;
+    animation: dropDown .5s ease-in-out forwards;
+}
+.small-scr ul{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(244, 248, 59);
     min-width: 100%;
 }
-nav ul li{
+.small-scr ul li{
     list-style-type: none;
     width: 100%;
     
 }
-nav ul li a{
+
+.small-scr ul li a{
     display: block;
     text-align: center;
     text-decoration: none;
@@ -86,12 +92,176 @@ nav ul li a{
     }
 }
 
-/* MOBILE SCREENS */
+/* BIGGER SCREENS */
 @media screen and (min-width: 750px){
-    nav{
-        display: block;
+    .big-scr{
+        display: block;  
+    }
+    .big-scr ul{
+        display: flex;
+        /* flex-flow: row nowrap; */
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .big-scr ul li{
+        list-style-type: none;
+        width: 100%; 
+    }
+    .big-scr ul li a{
+        text-decoration: none;
+        color: White;
+        font-size: 2.3rem;
+        font-weight: light;
+    }
+    .big-scr ul li a:hover{
+        background-color: yellow;
+        color: navy;
+        padding: 0.3rem;
+        border-radius: 0.9rem;
+    }
+    .menu-btn{
+        display: none;
     }
 }
+
+
+/* ***************HERO SECTION**************** */
+/* SMALLEST SCREEN SIZES */
+.hero{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    width: 100%;
+    margin-top: 4.3rem;
+}
+.hero .img {
+    margin-top: 1rem;
+}
+.hero #my-pic{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.info h2, .info p{
+    color: navy;
+    text-align: center;
+}
+.info p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.info .big{
+    display: none;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+.fa-brands{
+    font-size: 2rem;
+}
+
+
+/* BIGGER SCREENS */
+@media  screen and (min-width: 750px) {
+    .hero{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+    .hero .img {
+        margin-top: 0rem;
+    }
+    .hero #my-pic{
+        border-radius: 0px;
+        height: 700px;
+        width: 400px;
+    }
+    .info h2, .info p{
+        font-size: 3.5rem;
+    }
+    .info .small{
+        display: none;
+    }
+    .info .big{
+        display: block;
+    }
+    .fa-brands{
+        font-size: 5rem;
+    }
+}
+
+/* ***************ABOUT SECTION**************** */
+/* SMALLEST SCREEN SIZES */
+
+.about .title{
+    color: yellow;
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+.about p{
+    color: white;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 750px) {
+    .about .title{
+        font-size: 5rem;
+    }
+    .about p{
+        word-spacing: 5px;
+        font-size: 3rem;
+    }
+}
+
+/* ***************SKILLS SECTION**************** */
+/* SMALLEST SCREEN SIZES */
+.skills{
+    color: yellow;
+    text-align: center;
+}
+.sk-cont{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.sk-cont .tag{
+    padding: 2rem;
+    border: 5px solid white;
+    margin: 1rem;
+    min-width: 150px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

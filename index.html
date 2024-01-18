@@ -8,17 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/397319bfa6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
       <div class="h-cont">
         <h1 class="logo">Dev<span>_</span>Iyke</h1>
+        <nav class="big-scr">
+          <ul>
+            <li><a href="skills.html">About</a></li>
+            <li><a href="projects.html">Skills</a></li>
+            <li><a href="certifications.html">Portfolio</a></li>
+          </ul>
+        </nav>
         <button class="menu-btn">
-          <div class="menu-icon"></div>
+          <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
         </button>
       </div>
         
-      <nav>
+      <nav class="small-scr">
         <ul>
           <li><a href="skills.html">About Me</a></li>
           <li><a href="projects.html">Skills</a></li>
@@ -26,5 +34,43 @@
         </ul>
       </nav>
       </header>
+
+      <main>
+        <section class="hero">
+          <div class="img"><img src="images/me.jpg" id="my-pic" alt="My-pic"></div>
+          <div class="info" style="background-color: white;">
+            <h2 class="small">Obasi Ikechukwu T.</h2>
+            <h2 class="big">Obasi Ikechukwu Thompson</h2>
+            <p>Frontend Developer</p>
+            <p>Nigeria</p>
+            <div class="socials">
+              <div><i class="fa-brands fa-facebook"></i></div>
+              <div><i class="fa-brands fa-youtube"></i></div>
+              <div><i class="fa-brands fa-x-twitter"></i></div>
+              <div><i class="fa-brands fa-linkedin"></i></div>
+              <div><i class="fa-brands fa-github"></i></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <h2 class="title">Who am I?</h2>
+          <p>Ikechukwu is a Frontend Developer with a 2-year experience. With a B.Eng degree in Civil Engineering, he boasts of the analytical and problem-solving skills of an engineer. Thus, you can rely on him to bring your ideas and vision to life with engaging and interactive web and mobile softwares.</p>
+        </section>
+
+        <section class="skills">
+          <h2>Skills</h2>
+          <div class="sk-cont">
+            <div class="tag">HTML5</div>
+            <div class="tag">CSS3</div>
+            <div class="tag">Javascript</div>
+            <div class="tag">Bootstrap</div>
+            <div class="tag">Angular</div>
+            <div class="tag">React</div>
+            <div class="tag">Python</div>
+            <div class="tag">C</div>
+          </div>
+        </section>
+      </main>
 </body>
 </html>
