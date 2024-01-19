@@ -9,34 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/397319bfa6.js" crossorigin="anonymous"></script>
+    
 </head>
-<body>
+<body onclick="hideMenu()">
     <header>
       <div class="h-cont">
         <h1 class="logo">Dev<span>_</span>Iyke</h1>
         <nav class="big-scr">
           <ul>
-            <li><a href="skills.html">About</a></li>
-            <li><a href="projects.html">Skills</a></li>
+            <li><a href="#abt">About</a></li>
+            <li><a href="#skls">Skills</a></li>
             <li><a href="certifications.html">Portfolio</a></li>
           </ul>
         </nav>
-        <button class="menu-btn">
+        <button type="button" class="menu-btn" onclick="showMenu()">
           <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
         </button>
       </div>
         
-      <nav class="small-scr">
+      <nav id="show" class="small-scr hide-navBar">
         <ul>
-          <li><a href="skills.html">About Me</a></li>
-          <li><a href="projects.html">Skills</a></li>
+          <li><a href="#abt">About Me</a></li>
+          <li><a href="#skls">Skills</a></li>
           <li><a href="certifications.html">Portfolio</a></li>
         </ul>
       </nav>
       </header>
 
       <main>
-        <section class="hero">
+        <section id="home" class="hero">
           <div class="img"><img src="images/me.jpg" id="my-pic" alt="My-pic"></div>
           <div class="info" style="background-color: white;">
             <h2 class="small">Obasi Ikechukwu T.</h2>
@@ -53,24 +54,70 @@
           </div>
         </section>
 
-        <section class="about">
+        <section id="abt" class="about">
           <h2 class="title">Who am I?</h2>
-          <p>Ikechukwu is a Frontend Developer with a 2-year experience. With a B.Eng degree in Civil Engineering, he boasts of the analytical and problem-solving skills of an engineer. Thus, you can rely on him to bring your ideas and vision to life with engaging and interactive web and mobile softwares.</p>
+          <p>Ikechukwu is a Frontend Developer with a 2-year experience. Completing a B.Eng degree in Civil Engineering, he boasts of the analytical and problem-solving skills of an engineer. Thus, you can rely on him to bring your ideas and vision to life with engaging and interactive web and mobile softwares.</p>
         </section>
 
-        <section class="skills">
+        <section id="skls" class="skills">
+          
           <h2>Skills</h2>
           <div class="sk-cont">
-            <div class="tag">HTML5</div>
-            <div class="tag">CSS3</div>
-            <div class="tag">Javascript</div>
-            <div class="tag">Bootstrap</div>
-            <div class="tag">Angular</div>
-            <div class="tag">React</div>
-            <div class="tag">Python</div>
-            <div class="tag">C</div>
+            <div class="tag">
+              <p>HTML5</p>
+              <div class="arr"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="tag">
+              <p>CSS3</p>
+              <div class="arr"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="tag">
+              <p>Javascript</p>
+              <div class="arr"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="tag">
+              <p>Bootstrap</p>
+              <div class="arr"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="tag">
+              <p>Angular</p>
+              <div class="arr"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="tag">
+              <p>React</p>
+              <div class="arr"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="tag">
+              <p>Python</p>
+              <div class="arr"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="tag">
+              <p>C</p>
+              <div class="arr"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
           </div>
         </section>
       </main>
+
+      <footer>
+        <section class="cpr">
+          <p>Copyright Obasi Ikechukwu Thompson 2024 &copy;</p>
+          <p class="top"><a href="#home">Back to Top</a></p>
+        </section>
+      </footer>
+
+      <script>
+        function showMenu(){
+          let nav = document.getElementById("show");
+          nav.classList.remove("hide-navBar");
+          nav.classList.add("show-navBar");
+        }
+
+        function hideMenu(){
+          let nav = document.getElementById("show");
+          nav.classList.remove("show-NavBar");
+          nav.classList.add("hide-navBar");
+        }
+      </script>
 </body>
 </html>

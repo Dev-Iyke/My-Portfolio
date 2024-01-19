@@ -1,4 +1,6 @@
 /* GENERAL STYLES */
+
+/* REMEMBER YOU COMMENTED THE TOP MARGIN FOR THE HRO AND REMOVED THE FIXED DISPLAY OF THE HEADER */
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +16,7 @@ body{
     background-color: #003;
     display: flex;
     flex-direction: column;
+    
 }
 img{
     display: block;
@@ -21,6 +24,12 @@ img{
     height: auto;
 }
 
+.show-navBar{
+    display: block;
+}
+.hide-navBar{
+    display: none;
+}
 
 /* UTILITY CLASSES */
 .nowrap{
@@ -36,7 +45,8 @@ img{
     justify-content: space-between;
     width: 100%;
     background-color: navy;
-    position: fixed;
+    /* position: fixed; */
+    
 }
 .menu-btn{
     width: 30px;
@@ -50,8 +60,9 @@ img{
 .logo span{
     color: yellow;
 }
+
+/* *****NAVS**** */
 .small-scr{
-    display: none;
     animation: dropDown .5s ease-in-out forwards;
 }
 .big-scr{
@@ -94,6 +105,9 @@ img{
 
 /* BIGGER SCREENS */
 @media screen and (min-width: 750px){
+    .small-scr{
+        display: none;
+    }
     .big-scr{
         display: block;  
     }
@@ -133,7 +147,8 @@ img{
     flex-flow: column nowrap;
     background-color: white;
     width: 100%;
-    margin-top: 4.3rem;
+    /* margin-top: 4.3rem; */
+    scroll-margin-top: 4.3rem;
 }
 .hero .img {
     margin-top: 1rem;
@@ -201,7 +216,9 @@ img{
 
 /* ***************ABOUT SECTION**************** */
 /* SMALLEST SCREEN SIZES */
-
+.about{
+    scroll-margin-top: 4.3rem;
+}
 .about .title{
     color: yellow;
     font-size: 3.4rem;
@@ -219,29 +236,61 @@ img{
     .about p{
         word-spacing: 5px;
         font-size: 3rem;
+        word-wrap: break-word;
     }
 }
 
 /* ***************SKILLS SECTION**************** */
 /* SMALLEST SCREEN SIZES */
 .skills{
+    margin-top: 1rem;
     color: yellow;
     text-align: center;
+    scroll-margin-top: 4.3rem;
+}
+.skills h2{
+    font-size: 3.4rem;
 }
 .sk-cont{
-    display: flex;
-    flex-flow: row nowrap;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    
 }
 .sk-cont .tag{
+    display: flex;
+    justify-content: space-between;
     padding: 2rem;
-    border: 5px solid white;
-    margin: 1rem;
-    min-width: 150px;
+    font-size: 2.5rem;
+    border: 5px solid rgb(218, 213, 213);
     border-radius: 50px;
+    width: 90%;
+    margin: 0 auto;
+    
 }
 
+@media screen and (min-width: 750px) {
+    .skills h2{
+        color: yellow;
+        font-size: 5rem;
+        font-weight: 500;
+    }
+    .sk-cont{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.7rem;
+        
+    }
+}
 
-
+footer{
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    background-color: yellow;
+    color: navy;
+    text-align: center;
+}
 
 
 
