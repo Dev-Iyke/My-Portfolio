@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/397319bfa6.js" crossorigin="anonymous"></script>
-    
+    <script>history.scrollRestoration = "manual"</script>
 </head>
-<body onclick="hideMenu()">
+<body>
     <header>
       <div class="h-cont">
         <h1 class="logo">Dev<span>_</span>Iyke</h1>
@@ -32,12 +32,13 @@
           <li><a href="#abt">About Me</a></li>
           <li><a href="#skls">Skills</a></li>
           <li><a href="certifications.html">Portfolio</a></li>
+          <li onclick="hideMenu()" id="close"><a href="#">Close <i class="fa-solid fa-arrow-turn-up"></i></a></li>
         </ul>
       </nav>
       </header>
 
       <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero mt">
           <div class="img"><img src="images/me.jpg" id="my-pic" alt="My-pic"></div>
           <div class="info" style="background-color: white;">
             <h2 class="small">Obasi Ikechukwu T.</h2>
@@ -102,22 +103,10 @@
       <footer>
         <section class="cpr">
           <p>Copyright Obasi Ikechukwu Thompson 2024 &copy;</p>
-          <p class="top"><a href="#home">Back to Top</a></p>
+          <p class="top"><a href="#home">Back to Top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
         </section>
       </footer>
 
-      <script>
-        function showMenu(){
-          let nav = document.getElementById("show");
-          nav.classList.remove("hide-navBar");
-          nav.classList.add("show-navBar");
-        }
-
-        function hideMenu(){
-          let nav = document.getElementById("show");
-          nav.classList.remove("show-NavBar");
-          nav.classList.add("hide-navBar");
-        }
-      </script>
+      <script src="index.js"></script>
 </body>
 </html>
