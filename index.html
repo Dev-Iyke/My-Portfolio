@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obasi Ikechukwu</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
           <ul>
             <li><a href="#abt">About</a></li>
             <li><a href="#skls">Skills</a></li>
-            <li><a href="certifications.html">Portfolio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
           </ul>
         </nav>
         <button type="button" class="menu-btn" onclick="showMenu()">
@@ -28,10 +28,10 @@
       </div>
         
       <nav id="show" class="small-scr hide-navBar">
-        <ul>
+        <ul onclick="hideMenu()">
           <li><a href="#abt">About Me</a></li>
           <li><a href="#skls">Skills</a></li>
-          <li><a href="certifications.html">Portfolio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
           <li onclick="hideMenu()" id="close"><a href="#">Close <i class="fa-solid fa-arrow-turn-up"></i></a></li>
         </ul>
       </nav>

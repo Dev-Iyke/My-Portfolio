@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obasi Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/397319bfa6.js" crossorigin="anonymous"></script>
+    <script>history.scrollRestoration = "manual"</script>
+</head>
+<body>
+    <header>
+        <div class="h-cont">
+          <h1 class="logo">Dev<span>_</span>Iyke</h1>
+          <nav class="big-scr">
+            <ul>
+              <li><a href="/index.html#home">Home</a></li>
+              <li><a href="#abt">About</a></li>
+              <li><a href="#skls">Skills</a></li>
+              <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+            </ul>
+          </nav>
+          <button type="button" class="menu-btn" onclick="showMenu()">
+            <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+          </button>
+        </div>
+          
+        <nav id="show" class="small-scr hide-navBar">
+          <ul onclick="hideMenu()">
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="#abt">About Me</a></li>
+            <li><a href="#skls">Skills</a></li>
+            <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+            <li onclick="hideMenu()" id="close"><a href="#">Close <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+          </ul>
+        </nav>
+        </header>
+
+        <main>
+          <section class="portfolio mt mb">
+            <h2>Porfolio</h2>
+            <div class="works-cont">
+              <div class="works">
+                <div class="work-img"><img src="./images/simplilearn-1.PNG" alt=""></div>
+                <h2 class="work-title">Work One</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laudantium ducimus neque necessitatibus harum expedita explicabo alias eaque corrupti dolor.</p>
+              </div>
+              <div class="works">
+                <div class="work-img"><img src="./images/coursera-1.PNG" alt=""></div>
+                <h2 class="work-title">Work Two</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laudantium ducimus neque necessitatibus harum expedita explicabo alias eaque corrupti dolor.</p>
+              </div>
+              <div class="works">
+                <div class="work-img"><img src="./images/cousera-2.PNG" alt=""></div>
+                <h2 class="work-title">Work Three</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laudantium ducimus neque necessitatibus harum expedita explicabo alias eaque corrupti dolor.</p>
+              </div>
+              <div class="works">
+                <div class="work-img"><img src="./images/kibo-1.PNG" alt=""></div>
+                <h2 class="work-title">Work Three</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laudantium ducimus neque necessitatibus harum expedita explicabo alias eaque corrupti dolor.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="con">
+            <h2>Contact Me</h2>
+            <div class="line"></div>
+            <p class="form-text">
+              Thank you for getting here! I would really love to work with you.
+              please give me some information about you and I will reach out in no
+              time.
+            </p>
+            <fieldset>
+              <legend>Hire Me!</legend>
+              <form class="form" action="mision.html">
+                <label for="name">Name/ Company:</label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  id="name"
+                />
+                <br />
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  id="email"
+                />
+                <br />
+                <label for="tel">Mobile:</label>
+                <input
+                  type="tel"
+                  placeholder="Your Mobile Number"
+                  id="tel"
+                />
+                <br />
+                <label for="role">Interest:</label>
+                <!-- <input
+                  type="text"
+                  placeholder="Job Role"
+                  id="interest"
+                /> -->
+                <select name="role" id="role">
+                  <option value="null">Select a job for me</option>
+                  <option value="Web development">Web Developer</option>
+                  <option value="Mobile developer">Mobile Developer</option>
+                  <option value="Devops engineer">Devops Engineer</option>
+                  <option value="Web3 developer">Web3/Block-chain Developer</option>
+                  <option value="instructor">Frontend Instructor</option>
+                </select>
+
+                
+                <br />
+                <label for="name">Feedback:</label>
+                <textarea
+                  name="Feedback"
+                  id="Feedback"
+                  cols="30"
+                  rows="10"
+                  placeholder="How was your experience on this website?"
+                ></textarea>
+                <br />
+                <button>Submit</button>
+              </form>
+            </fieldset>
+          </section>
+        </main>
+        <script src="index.js"></script>
+</body>
+</html>

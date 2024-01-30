@@ -1,0 +1,145 @@
+/* ***********PORTFOLIO SECTION************ */
+/* SMALL SCREENS */
+.portfolio h2{
+    color: yellow;
+    text-align: center;
+    padding-top: 1rem;
+}
+.works-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: navy;
+}
+.works{
+    color: yellow;
+    width: 85%;
+    box-shadow: 4px 5px 3px #333;
+    
+    text-align: center;
+}
+.works .work-img{
+    margin-top: 1rem;
+}
+.works .work-img img{
+    object-fit: cover;
+    object-position: top;
+    margin: 0 auto;
+    
+  }
+
+
+/* BIGGER SCREEN SIZES */
+@media screen and (min-width: 750px) {
+    
+}
+
+
+
+/* ***********CONTACT ME SECTION************ */
+/* SMALL SCREENS */
+#con{
+    background-color: navy;
+    color: white;
+}
+#con h2{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem 0 .3rem 0;
+}
+.line{
+    height: 3px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: yellow;
+}
+#con .form-text{
+    font-weight: 300;
+    padding: 1rem;
+}
+legend{
+    text-align: center;
+    color: yellow;
+    font-size: 2rem;
+    padding: 1rem;
+}
+label{
+    display: block;
+}
+input, select, textarea{
+    display: block;
+    font-size: 1.4rem;
+    background-color: #003;
+    color: yellow;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    border-radius: 25px;
+    outline: none;
+}
+select, textarea{
+    width: 100%;
+    font-size: 1.25rem;
+}
+option{
+    font-size: 1.5rem;
+}
+fieldset, .form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+textarea{
+    font-size: 1.5rem;
+}
+button{
+    padding: 1rem;
+    background-color: yellow;
+    color: #003;
+    font-size: 1.8rem;
+    width: 60%;
+    margin: 0 auto 2rem;
+    border: none;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: transparent;
+    color: yellow;
+}
+
+/* BIGGER SCREEN SIZES */
+@media screen and (min-width: 750px) {
+    #con .form-text{
+        font-size: 2.5rem;
+    }
+    legend{
+        font-size: 3rem;
+    }
+    label{
+        font-size: 1.8rem;
+    }
+    input, select, textarea{
+        font-size: 2rem;
+        padding: 1rem 2rem;
+    }
+    select, textarea{
+        font-size: 2.25rem;
+    }
+    textarea{
+        height: 300px;
+    }
+    option{
+        font-size: 1.7rem;
+    }
+
+    fieldset, .form{
+        width: 70%;
+        background-color: rgba(4, 4, 100, 0.808);
+    }
+    button{
+        width: 40%;
+    }
+}
