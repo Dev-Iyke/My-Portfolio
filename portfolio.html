@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obasi Portfolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/397319bfa6.js" crossorigin="anonymous"></script>
+    <script>history.scrollRestoration = "manual"</script>
+</head>
+<body>
+    <header>
+        <div class="h-cont">
+          <h1 class="logo">Dev<span>_</span>Iyke</h1>
+          <nav class="big-scr">
+            <ul>
+              <li><a href="/index.html#home">Home</a></li>
+              <li><a href="#abt">About</a></li>
+              <li><a href="#skls">Skills</a></li>
+              <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+            </ul>
+          </nav>
+          <button type="button" class="menu-btn" onclick="showMenu()">
+            <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
+          </button>
+        </div>
+          
+        <nav id="show" class="small-scr hide-navBar">
+          <ul onclick="hideMenu()">
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="#abt">About Me</a></li>
+            <li><a href="#skls">Skills</a></li>
+            <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+            <li onclick="hideMenu()" id="close"><a href="#">Close <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+          </ul>
+        </nav>
+        </header>
+
+        <main>
+          <section class="portfolio mt mb">
+            <h2>Certifications</h2>
+            <div class="works-cont">
+              <div class="works">
+                <div class="work-img"><img src="./images/simplilearn-1.PNG" alt=""></div>
+                <h2 class="work-title">Simplilearn</h2>
+                <p class="desc">This course equiped me with the foundations of javaScript, understanding the difference between javaScript and other programming languages. Javascript is robust and very dynamic, giving me the opportunity to try out new things in very effective ways.</p>
+              </div>
+              <div class="works">
+                <div class="work-img"><img src="./images/coursera-1.PNG" alt=""></div>
+                <h2 class="work-title">Coursera</h2>
+                <p class="desc">This was the fisrt time I got involved in how the web works. This course gave me a deep knowledge of browsers, servers, APIs and so on. I am happy i ccompleted this course despite how challwnging it was.</p>
+              </div>
+              <div class="works">
+                <div class="work-img"><img src="./images/cousera-2.PNG" alt=""></div>
+                <h2 class="work-title">Coursera</h2>
+                <p class="desc">Every aspiring developer must be willing and able to work and colaborate with other developers around the world. This course on version control system called git has given me a skill I believe I will always use.</p>
+              </div>
+              <div class="works">
+                <div class="work-img"><img src="./images/kibo-1.PNG" alt=""></div>
+                <h2 class="work-title">Try-Kibo</h2>
+                <p class="desc">Try-kibo was thorough! Web development was the language we spoke in this program. I learnt new thing and met new people that will and are still inspiring me to get better in web and software development</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="con">
+            <h2>Contact Me</h2>
+            <div class="line"></div>
+            <p class="form-text">
+              Thank you for getting here! I would really love to work with you.
+              please give me some information about you and I will reach out in no
+              time.
+            </p>
+            <fieldset>
+              <legend>Hire Me!</legend>
+              <form class="form" action="mision.html">
+                <label for="name">Name/ Company:</label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  id="name"
+                />
+                <br />
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  id="email"
+                />
+                <br />
+                <label for="tel">Mobile:</label>
+                <input
+                  type="tel"
+                  placeholder="Your Mobile Number"
+                  id="tel"
+                />
+                <br />
+                <label for="role">Interest:</label>
+                <!-- <input
+                  type="text"
+                  placeholder="Job Role"
+                  id="interest"
+                /> -->
+                <select name="role" id="role">
+                  <option value="null">Select a job for me</option>
+                  <option value="Web development">Web Developer</option>
+                  <option value="Mobile developer">Mobile Developer</option>
+                  <option value="Devops engineer">Devops Engineer</option>
+                  <option value="Web3 developer">Web3/Block-chain Developer</option>
+                  <option value="instructor">Frontend Instructor</option>
+                </select>
+
+                
+                <br />
+                <label for="name">Feedback:</label>
+                <textarea
+                  name="Feedback"
+                  id="Feedback"
+                  cols="30"
+                  rows="10"
+                  placeholder="How was your experience on this website?"
+                ></textarea>
+                <br />
+                <button>Submit</button>
+              </form>
+            </fieldset>
+          </section>
+        </main>
+        <script src="index.js"></script>
+</body>
+</html>

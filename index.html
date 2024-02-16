@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obasi Ikechukwu</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/397319bfa6.js" crossorigin="anonymous"></script>
-    
+    <script>history.scrollRestoration = "manual"</script>
 </head>
-<body onclick="hideMenu()">
+<body>
     <header>
       <div class="h-cont">
         <h1 class="logo">Dev<span>_</span>Iyke</h1>
@@ -19,7 +19,7 @@
           <ul>
             <li><a href="#abt">About</a></li>
             <li><a href="#skls">Skills</a></li>
-            <li><a href="certifications.html">Portfolio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
           </ul>
         </nav>
         <button type="button" class="menu-btn" onclick="showMenu()">
@@ -28,16 +28,17 @@
       </div>
         
       <nav id="show" class="small-scr hide-navBar">
-        <ul>
+        <ul onclick="hideMenu()">
           <li><a href="#abt">About Me</a></li>
           <li><a href="#skls">Skills</a></li>
-          <li><a href="certifications.html">Portfolio</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li onclick="hideMenu()" id="close"><a href="#">Close <i class="fa-solid fa-arrow-turn-up"></i></a></li>
         </ul>
       </nav>
       </header>
 
       <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero mt">
           <div class="img"><img src="images/me.jpg" id="my-pic" alt="My-pic"></div>
           <div class="info" style="background-color: white;">
             <h2 class="small">Obasi Ikechukwu T.</h2>
@@ -45,11 +46,11 @@
             <p>Frontend Developer</p>
             <p>Nigeria</p>
             <div class="socials">
-              <div><i class="fa-brands fa-facebook"></i></div>
-              <div><i class="fa-brands fa-youtube"></i></div>
-              <div><i class="fa-brands fa-x-twitter"></i></div>
-              <div><i class="fa-brands fa-linkedin"></i></div>
-              <div><i class="fa-brands fa-github"></i></div>
+              <div><a href="https://www.facebook.com/ikechukwu.thompson.7"><i class="fa-brands fa-facebook"></i></a></div>
+              <div><a href="https://www.youtube.com/channel/UCRE9eDNh1hMC8SJOWLyNpKg"><i class="fa-brands fa-youtube"></i></a></div>
+              <div><a href="https://x.com/Thommy_Pro?t=DMdG8UD2TA3pcapvYtUb6Q&s=09"><i class="fa-brands fa-x-twitter"></i></a></div>
+              <div><a href="https://www.linkedin.com/in/obasi-ikechukwu"><i class="fa-brands fa-linkedin"></i></a></div>
+              <div><a href="https://github.com/Dev-Iyke"><i class="fa-brands fa-github"></i></a></div>
             </div>
           </div>
         </section>
@@ -99,25 +100,38 @@
         </section>
       </main>
 
+      <section class="hobby">
+        <h2>
+          Hobbies
+        </h2>
+        <div class="hob-list">
+          <div>
+            <p class="cont"></p>
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <div>
+            <p class="cont"></p>
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div>
+            <p class="cont"></p>
+            <i class="fa-regular fa-futbol"></i>
+          </div>
+          <div>
+            <p class="cont"></p>
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          
+        </div>
+      </section>
+
       <footer>
         <section class="cpr">
           <p>Copyright Obasi Ikechukwu Thompson 2024 &copy;</p>
-          <p class="top"><a href="#home">Back to Top</a></p>
+          <p class="top"><a href="#home">Back to Top <i class="fa-solid fa-arrow-turn-up"></i></a></p>
         </section>
       </footer>
 
-      <script>
-        function showMenu(){
-          let nav = document.getElementById("show");
-          nav.classList.remove("hide-navBar");
-          nav.classList.add("show-navBar");
-        }
-
-        function hideMenu(){
-          let nav = document.getElementById("show");
-          nav.classList.remove("show-NavBar");
-          nav.classList.add("hide-navBar");
-        }
-      </script>
+      <script src="index.js"></script>
 </body>
 </html>
