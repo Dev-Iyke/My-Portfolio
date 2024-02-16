@@ -18,6 +18,7 @@ body {
   background-color: #003;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 img {
   display: block;
@@ -39,7 +40,6 @@ img {
 
 /* ***************HEADER SECTION**************** */
 /* SMALLEST SCREEN SIZES */
-
 .h-cont {
   display: flex;
   align-items: center;
@@ -52,6 +52,7 @@ img {
   background-color: transparent;
   border: none;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .logo {
@@ -65,6 +66,7 @@ img {
 /* *****NAVS**** */
 .small-scr {
   animation: dropDown 0.5s ease-in-out forwards;
+  margin-top: 4.8rem;
 }
 .big-scr {
   display: none;
@@ -76,14 +78,17 @@ img {
   align-items: center;
   background-color: rgb(244, 248, 59);
   min-width: 100%;
+
 }
 .small-scr ul li {
   list-style-type: none;
   width: 100%;
+  
 }
 .fa-bars {
   color: yellow;
   font-size: 2rem;
+  cursor: pointer;
 }
 .small-scr ul li a {
   display: block;
@@ -100,7 +105,7 @@ img {
 
 @keyframes dropDown {
   0% {
-    transform: scaleY(0);
+    transform: scaleY(1);
   }
   80% {
     transform: scaleY(1.2);
@@ -175,7 +180,7 @@ img {
 .info h2,
 .info p {
   color: navy;
-  text-align: center;
+  text-align: left;
 }
 .info p {
   font-size: 1.8rem;
@@ -192,8 +197,17 @@ img {
 }
 .fa-brands {
   font-size: 2rem;
+  cursor: pointer;
 }
-
+.fa-youtube{
+  color: red;
+}
+.fa-x-twitter, .fa-github{
+  color: black;
+}
+.fa-linkedin{
+  color: blueviolet;
+}
 /* BIGGER SCREENS */
 @media screen and (min-width: 750px) {
   .hero {
@@ -230,7 +244,7 @@ img {
 /* SMALLEST SCREEN SIZES */
 .about {
   scroll-margin-top: 4.3rem;
-  padding-left: 1rem;
+  padding: 0 1rem;
 }
 .about .title {
   color: yellow;
@@ -296,6 +310,16 @@ img {
     padding: 2rem;
     font-size: 2.5rem;
   }
+}
+
+.hobby{
+  color: white;
+  margin: 1rem 0 1rem 2rem;
+}
+.hob-list div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* ***************FOOTER SECTION**************** */

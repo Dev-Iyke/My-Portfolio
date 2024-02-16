@@ -11,3 +11,15 @@ function hideMenu(){
     nav.classList.add("hide-navBar");
     mt.classList.add("mt");
 }
+
+//Running a loop to input hobbies
+let hobbies = ["Reading", "Coding", "Football", "Singing"]
+let hobby = document.getElementsByClassName("cont")
+for (let i = 0; i < hobby.length; i++) {
+    if(hobbies[i] == undefined){
+        hobby[i].textContent = ""
+    }
+    else{
+        hobby[i].innerHTML = hobbies[i]
+    }   
+}
