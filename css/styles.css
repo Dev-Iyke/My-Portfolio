@@ -181,6 +181,7 @@ img {
 .info p {
   color: navy;
   text-align: left;
+  margin-left: 2rem;
 }
 .info p {
   font-size: 1.8rem;

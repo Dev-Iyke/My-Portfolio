@@ -1,10 +1,13 @@
 @import url('./styles.css');
 /* ***********PORTFOLIO SECTION************ */
 /* SMALL SCREENS */
-.portfolio h2{
-    color: yellow;
+.portfolio h1, .works h2{
+    color: white;
     text-align: center;
     padding-top: 1rem;
+}
+.works h2{
+    color: yellow;
 }
 .works-cont{
     display: flex;
@@ -16,21 +19,22 @@
 }
 .works{
     color: yellow;
-    width: 85%;
+    width: 90%;
     box-shadow: 4px 5px 3px #333;
-    
     text-align: center;
 }
 .works .work-img{
-    margin-top: 1rem;
+    margin: 1rem 0;
+    width: 95%;
 }
 .works .work-img img{
     object-fit: cover;
     object-position: top;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
   }
-
+.work-title{
+    font-weight: 400;
+}
 
 /* BIGGER SCREEN SIZES */
 @media screen and (min-width: 750px) {
