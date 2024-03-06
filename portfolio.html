@@ -30,22 +30,33 @@
         </div>
           
         <nav id="show" class="small-scr hide-navBar">
-          <ul onclick="hideMenu()">
+          <ul onclick="hidePoMenu()">
             <li><a href="/index.html#home">Home</a></li>
             <li><a href="#abt">About Me</a></li>
             <li><a href="#skls">Skills</a></li>
             <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
-            <li onclick="hideMenu()" id="close"><a href="#">Close <i class="fa-solid fa-arrow-turn-up"></i></a></li>
+            <li onclick="hidePoMenu()" id="close"><a href="#">Close <i class="fa-solid fa-arrow-turn-up"></i></a></li>
           </ul>
         </nav>
         </header>
 
         <main>
-          <section id="portfo" class="portfolio mt mb">
+          <section id="Certifications" class="cert mt">
             <h1>Certifications</h1>
             <div class="line"></div>
-            <div class="works-cont">
-              <div class="works">
+            <div class="cert-cont">
+              <section class="slider">
+                <h2 id="org" class="cert-title"></h2>
+                <img id="img-cont" src="" alt="sliding image">
+                <p class="cert-desc" id="desc"></p>
+                <button id="next">&gt;</button>
+        
+                <button id="prev"> &lt;</button>
+              </section>
+            <p id="last"></p>
+
+
+              <!-- <div class="works">
                 <h2 class="work-title">CodeVerse</h2>
                 <div class="work-img"><img src="./certs/codeverse-frontend.png" alt=""></div>
                 
@@ -80,16 +91,16 @@
                 <div class="work-img"><img src="./certs/simplilearn-frontend.png" alt=""></div>
                 
                 <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus explicabo et asperiores exercitationem doloribus doloremque voluptatibus facere deserunt! Vitae itaque tempora laboriosam nostrum voluptates optio, praesentium quo natus fugiat.</p>
-              </div>
+              </div> -->
             </div>
           </section>
-
-          <section id="con">
+         
+          <section class="" id="con">
             <h2>Contact Me</h2>
             <div class="line"></div>
             <p class="form-text">
               Thank you for getting here! I would really love to work with you.
-              please give me some information about you and I will reach out in no
+              Give me some information about you and the job role and I will reach out in no
               time.
             </p>
             <fieldset>

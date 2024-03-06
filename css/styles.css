@@ -219,14 +219,14 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 3rem;
   }
   .hero .img {
     margin-top: 0rem;
+    margin: 2rem;
   }
   .hero #my-pic {
     border-radius: 0px;
-    height: 700px;
+    height: 500px;
     width: 400px;
   }
   .info h2,

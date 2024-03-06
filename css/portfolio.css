@@ -1,44 +1,101 @@
 @import url('./styles.css');
-/* ***********PORTFOLIO SECTION************ */
-/* SMALL SCREENS */
-.portfolio h1, .works h2{
-    color: white;
+/* ***********CERTIFICATION SECTION************ */
+/* *********** SLIDE SECTION - SMALL SCREENS************ */
+main{
+    background-color: white;
+}
+.cert h1{
+    color: navy;
     text-align: center;
     padding-top: 1rem;
+    font-size: 2.5rem;
 }
-.works h2{
-    color: yellow;
-}
-.works-cont{
+/* .works-cont h2{
+    color: black;
+} */
+.cert-cont{
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     color: navy;
+    max-height: 100vh;
 }
-.works{
-    color: yellow;
-    width: 90%;
-    box-shadow: 4px 5px 3px #333;
+.slider{
+    color: black;
+    background-color: rgba(228, 226, 226, 0.559);
+    border-radius: 18px;
+    box-shadow: 4px 3px 3px #bdb4f6;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
+    margin: auto;
 }
-.works .work-img{
+.cert-title{
+    font-weight: 600;
+}
+.works-cont #img-cont{
     margin: 1rem 0;
     width: 95%;
+    height: 100%;
+    object-fit: cover;
 }
-.works .work-img img{
+.cert-desc{
+    background-color: navy;
+    border-radius: 0 0 18px 18px;
+    color: yellow;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 2rem;
+
+}
+/* .works .work-img img{
     object-fit: cover;
     object-position: top;
     margin: 0 auto;  
+  } */
+  
+  /* #slide-cont {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+  .slider button {
+    position: absolute;
+    padding: 0.5rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.292);
+    cursor: pointer;
+    border-radius: 8px;
   }
-.work-title{
-    font-weight: 400;
-}
-
+  #next {
+    right: .3rem;
+    width: 2rem;
+  }
+  #prev {
+    left: .3rem;
+    width: 2rem;
+  }
+  #next,#prev:hover{
+    color: navy;
+  }
+  #last{
+      text-align: center;
+      padding: .8rem;
+  }
+  
 /* BIGGER SCREEN SIZES */
 @media screen and (min-width: 750px) {
-    
+    #next, #prev{
+        display: none;
+    }
 }
 
 
